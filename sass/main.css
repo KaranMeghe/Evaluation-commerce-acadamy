@@ -615,12 +615,12 @@ a {
 }
 
 .solution__img {
-  height: 100%;
   width: 100%;
 }
 
 .solution__img--fit {
   width: 100%;
+  height: 100%;
   display: block;
 }
 
