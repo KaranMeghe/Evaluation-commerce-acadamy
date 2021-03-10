@@ -247,6 +247,12 @@ a {
           justify-content: center;
 }
 
+.footer__devloper a {
+  text-decoration: none;
+  color: var(--color-grey-light-1);
+  border-bottom: 1px solid var(--color-grey-light-1);
+}
+
 .footer__dev--icon {
   height: 2.2rem;
   width: 2.2rem;
@@ -258,11 +264,6 @@ a {
 
 .footer__dev--text {
   font-size: 2rem;
-}
-
-.footer a {
-  text-decoration: none;
-  color: var(--color-grey-light-1);
 }
 
 .footer__legal {

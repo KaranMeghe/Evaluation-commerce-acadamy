@@ -50,6 +50,13 @@
     &__devloper{
         display: flex;
         justify-content: center;
+
+        a{
+            text-decoration: none;
+            color: var(--color-grey-light-1);
+            border-bottom: 1px solid var(--color-grey-light-1);
+        }
+    
     }
 
     &__dev--icon{
@@ -62,11 +69,6 @@
 
     &__dev--text{
         font-size: 2rem;
-    }
-
-    a{
-        text-decoration: none;
-        color: var(--color-grey-light-1);
     }
 
     &__legal{
