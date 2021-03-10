@@ -5,6 +5,7 @@
 
     &__main{
         display: flex;
+        justify-content: center;
     }
    
     &__address{
@@ -22,6 +23,11 @@
         width: 2.5rem;
         height: 2.5rem;
         fill: var(--color-primary);
+        transition: 0.3s;
+
+        &:hover{
+            fill: var(--color-grey-light-1);
+        }
     }
 
     &__md--info{
@@ -47,6 +53,8 @@
         }
     }
 
+    .mail{display: flex;}
+
     &__devloper{
         display: flex;
         justify-content: center;
@@ -55,7 +63,15 @@
             text-decoration: none;
             color: var(--color-grey-light-1);
             border-bottom: 1px solid var(--color-grey-light-1);
+            transition: 0.2s;
+
+            &:hover{
+                color: var(--color-primary);
+                border-bottom: 1px solid var(--color-primary);
+            }
         }
+
+        
     
     }
 

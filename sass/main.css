@@ -176,6 +176,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__address {
@@ -202,6 +205,12 @@ a {
   width: 2.5rem;
   height: 2.5rem;
   fill: var(--color-primary);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__icon:hover {
+  fill: var(--color-grey-light-1);
 }
 
 .footer__md--info {
@@ -238,6 +247,12 @@ a {
   padding: 0 2rem;
 }
 
+.footer .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer__devloper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,6 +266,13 @@ a {
   text-decoration: none;
   color: var(--color-grey-light-1);
   border-bottom: 1px solid var(--color-grey-light-1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__devloper a:hover {
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
 }
 
 .footer__dev--icon {
