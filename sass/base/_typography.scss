@@ -1,0 +1,58 @@
+.heading-primary{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+
+    &--E{
+        color: var(--color-primary);
+    }
+    
+    &--main{
+        display: block;
+        font-size: 6rem;
+        letter-spacing: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    &--secondary{
+        font-size: 2rem;
+        letter-spacing: .5rem;
+        font-weight: 400;
+    }
+}
+
+%heading{
+    font-family: var(--font-display);
+    font-weight: 400;
+}
+
+.heading-h1{
+ @extend %heading;
+ font-size: 4rem;
+ margin: inherit;
+}
+
+.heading-h2{
+ @extend %heading;
+ font-size: 4rem;
+}
+
+.heading-h3{
+    @extend %heading;
+    font-size: 2rem;
+}
+
+.heading-h4{
+    @extend %heading;   
+    font-size: 1.9rem; 
+    // text-align: center;
+
+    &--light{color: var(--color-grey-light-1);}
+    &--dark{color: var(--color-grey-dark-1);}
+
+}
+
+ .padding-sm{
+     padding: 1rem 0;
+ }

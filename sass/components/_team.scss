@@ -1,0 +1,30 @@
+.team{
+    padding: 5rem;
+
+    &__text-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__info{
+        display: flex;
+        width: 100%;
+        
+        div{
+            padding: 5rem;
+            text-align: center;
+        }
+    }
+
+    &__img{
+        width: 100%;
+        display: block;
+        // border-radius: 50%;
+    }
+
+    &__h{
+        padding: 1rem;
+    }
+}
