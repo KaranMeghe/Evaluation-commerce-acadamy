@@ -1,0 +1,93 @@
+.footer{
+    background: var(--color-secondary-2);
+    color: var(--color-grey-light-1);
+    padding: 5rem;
+
+    &__main{
+        display: flex;
+    }
+   
+    &__address{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5rem;
+    }
+
+    &__address-box{
+        display: flex;
+    }
+
+    &__icon{
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: var(--color-primary);
+    }
+
+    &__md--info{
+        display: flex;
+        // flex-direction: column;
+    }
+
+    &__twit{
+        margin-right: 1rem;
+    }
+    &__md--main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__social--icon{
+        display: flex;
+        margin: 5rem 0;
+        justify-content: center;
+
+        a{
+            padding: 0 2rem;
+        }
+    }
+
+    &__devloper{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__dev--icon{
+        height: 2.2rem;
+        width: 2.2rem;
+        fill:#ff3030;
+        margin: 0 .8rem;
+        animation: pulsate 1s infinite;
+    }
+
+    &__dev--text{
+        font-size: 2rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--color-grey-light-1);
+    }
+
+    &__legal{
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    &__legal--text{
+        font-size: 1.8rem;
+    }
+
+}
+
+@keyframes pulsate{
+    0%{
+     transform: scale(1);
+    }
+    50%{
+     transform: scale(1.5);
+    }
+    100%{
+      transform: scale(1);
+    }
+}
