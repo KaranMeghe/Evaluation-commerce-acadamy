@@ -15,6 +15,10 @@
 
    &__box{
        display: flex;
+
+       @include respond (Phone){
+           flex-direction: column;
+       }
    }
 
    &__img{
@@ -36,6 +40,11 @@
    &__text{
        margin: 2rem 0;
        font-size: 1.7rem;
+
+       @include respond (Phone){
+           margin: 3rem 0;
+           font-size: 2.5rem;
+       }
    }
 
    &__text--info{
@@ -52,10 +61,18 @@
     //    word-spacing: .8rem;
        line-height: 1.5;
        width: 95%;
+
+       @include respond (Phone){
+           font-size: 4rem;
+       }
    }
     
    &__h4--heading{
     font-size: 2rem;
+
+    @include respond (Phone){
+        font-size: 3.5rem;
+    }
    }
    
 

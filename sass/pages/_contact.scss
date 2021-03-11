@@ -4,10 +4,17 @@
     &__section{
         display: flex;
         width: 100%;
+
+        @include respond (Phone){
+            flex-direction: column;
+        }
     }
 
     &__section--img{
         width: 50%;
+        @include respond (Phone){
+        width: 100%;
+        }
     }
 
     &__img{
@@ -27,6 +34,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @include respond (Phone){
+            width: 100%;
+            padding: 3rem;
+            }
+        
     }
 
     &__form{
@@ -46,10 +59,18 @@
         width: 20%;
         margin-right: 2rem;
 
+        @include respond (Phone){
+            width: 100%;
+        }
+
     }
 
     &__form--label{
         margin-bottom: 2.5rem;
+
+        @include  respond (Phone){
+            margin-bottom: 3.5rem;
+        }
         
     }
 

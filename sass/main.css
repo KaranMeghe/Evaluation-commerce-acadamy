@@ -149,6 +149,12 @@ a {
   color: #fff;
 }
 
+@media (max-width: 500px) {
+  .btn-outline {
+    font-size: 2rem;
+  }
+}
+
 .btn-form {
   display: inline-block;
   min-width: 25%;
@@ -183,9 +189,25 @@ a {
   width: 100%;
 }
 
+@media (max-width: 500px) {
+  .team__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .team__info div {
   padding: 5rem;
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  .team__text {
+    text-align: center;
+    font-size: 2.5rem;
+  }
 }
 
 .team__img {
@@ -195,6 +217,10 @@ a {
 
 .team__h {
   padding: 1rem;
+}
+
+.team__h3 {
+  font-size: 3.5rem;
 }
 
 .footer {
@@ -606,8 +632,23 @@ a {
   width: 100%;
 }
 
+@media (max-width: 500px) {
+  .contact__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact__section--img {
   width: 50%;
+}
+
+@media (max-width: 500px) {
+  .contact__section--img {
+    width: 100%;
+  }
 }
 
 .contact__img {
@@ -638,6 +679,13 @@ a {
           align-items: center;
 }
 
+@media (max-width: 500px) {
+  .contact__section--form {
+    width: 100%;
+    padding: 3rem;
+  }
+}
+
 .contact__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -665,8 +713,20 @@ a {
   margin-right: 2rem;
 }
 
+@media (max-width: 500px) {
+  .contact__form--control-label {
+    width: 100%;
+  }
+}
+
 .contact__form--label {
   margin-bottom: 2.5rem;
+}
+
+@media (max-width: 500px) {
+  .contact__form--label {
+    margin-bottom: 3.5rem;
+  }
 }
 
 .contact__form--select {
@@ -734,6 +794,15 @@ a {
   display: flex;
 }
 
+@media (max-width: 500px) {
+  .solution__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .solution__img {
   width: 100%;
 }
@@ -753,6 +822,13 @@ a {
 .solution__text {
   margin: 2rem 0;
   font-size: 1.7rem;
+}
+
+@media (max-width: 500px) {
+  .solution__text {
+    margin: 3rem 0;
+    font-size: 2.5rem;
+  }
 }
 
 .solution__text--info {
@@ -779,8 +855,20 @@ a {
   width: 95%;
 }
 
+@media (max-width: 500px) {
+  .solution__h2--heading {
+    font-size: 4rem;
+  }
+}
+
 .solution__h4--heading {
   font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+  .solution__h4--heading {
+    font-size: 3.5rem;
+  }
 }
 
 .solution__link {
