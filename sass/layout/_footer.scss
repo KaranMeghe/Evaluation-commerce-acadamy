@@ -42,6 +42,10 @@
     &__md--info{
         display: flex;
         // flex-direction: column;
+
+        @include respond (Phone){
+            justify-content: center;
+        }
     }
 
     &__twit{

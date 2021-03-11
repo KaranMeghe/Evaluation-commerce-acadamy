@@ -292,6 +292,14 @@ a {
   display: flex;
 }
 
+@media (max-width: 500px) {
+  .footer__md--info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer__twit {
   margin-right: 1rem;
 }
