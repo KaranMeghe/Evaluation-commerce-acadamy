@@ -715,7 +715,7 @@ a {
 
 @media (max-width: 500px) {
   .contact__form--control-label {
-    width: 100%;
+    width: 20%;
   }
 }
 
