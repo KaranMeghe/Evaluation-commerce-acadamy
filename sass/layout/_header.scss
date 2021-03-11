@@ -5,7 +5,7 @@
     height: 100vh;
 
     @include respond (Phone){
-        height: 90vh;
+        height: 80vh;
     }
     
     &__text-box{

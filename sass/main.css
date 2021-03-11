@@ -368,6 +368,12 @@ a {
   border-bottom: 1px solid var(--color-grey-light-1);
 }
 
+@media (max-width: 500px) {
+  .features {
+    padding: 5rem;
+  }
+}
+
 .features__heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -378,6 +384,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 500px) {
+  .features__heading--h2 {
+    font-size: 6rem;
+  }
 }
 
 .features__icon {
@@ -400,6 +412,18 @@ a {
           justify-content: center;
 }
 
+@media (max-width: 500px) {
+  .features__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .features__box-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,6 +431,18 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .features__box-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .feature {
@@ -421,6 +457,14 @@ a {
           align-items: baseline;
 }
 
+@media (max-width: 500px) {
+  .feature {
+    width: 100%;
+    padding: 2rem;
+    margin: 5rem 0;
+  }
+}
+
 .feature__icon {
   fill: var(--color-primary);
   height: 4.5rem;
@@ -429,6 +473,18 @@ a {
 
 .feature__text {
   font-size: 1.7rem;
+}
+
+@media (max-width: 500px) {
+  .feature__text {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .feature__heading--h4 {
+    font-size: 4.9rem;
+  }
 }
 
 .header {
@@ -441,7 +497,7 @@ a {
 
 @media (max-width: 500px) {
   .header {
-    height: 90vh;
+    height: 80vh;
   }
 }
 
@@ -659,6 +715,12 @@ a {
   background: em;
   background: -webkit-gradient(linear, right top, left top, from(var(--color-primary-dark)), color-stop(var(--color-primary)), to(var(--color-primary-dark)));
   background: linear-gradient(to left, var(--color-primary-dark), var(--color-primary), var(--color-primary-dark));
+}
+
+@media (max-width: 500px) {
+  .content-divider {
+    height: 1.5rem;
+  }
 }
 
 .solution {

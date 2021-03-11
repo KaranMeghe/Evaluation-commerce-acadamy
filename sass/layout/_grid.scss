@@ -1,12 +1,25 @@
 .features{
     padding: 8rem;
     border-bottom: 1px solid var(--color-grey-light-1);
+    
+    @include respond (Phone){
+        padding: 5rem;
+    }
+
     &__heading{
         display: flex;
         justify-content: center;
         align-items: center;
        
     }
+
+    &__heading--h2{
+
+        @include respond (Phone){
+            font-size: 6rem;
+        }
+    }
+
 
     &__icon{
         fill: var(--color-primary);
@@ -20,11 +33,21 @@
     &__box{
         display: flex;
         justify-content: center;
+
+        @include respond (Phone){
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__box-2{
         display: flex;
         justify-content: center;
+
+        @include respond (Phone){
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
@@ -35,6 +58,12 @@
     justify-content: center;
     align-items: baseline;
 
+    @include respond (Phone){
+        width: 100%;
+        padding: 2rem;
+        margin: 5rem 0;
+    }
+
     &__icon{
         fill: var(--color-primary);
         height: 4.5rem;
@@ -43,5 +72,16 @@
 
     &__text{
         font-size: 1.7rem;
+
+        @include respond (Phone){
+            font-size: 4rem;
+        }
     }
+
+    &__heading--h4{
+        @include respond (Phone){
+            font-size: 4.9rem;
+        }
+    }
+
 }
