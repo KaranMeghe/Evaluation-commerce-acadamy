@@ -401,6 +401,10 @@ a {
   font-size: 1.8rem;
 }
 
+.footer .cta {
+  color: var(--color-grey-light-1);
+}
+
 @-webkit-keyframes pulsate {
   0% {
     -webkit-transform: scale(1);
