@@ -2,6 +2,19 @@
 .navbar{
   display: flex;
   justify-content: space-around;
+  background: var(--color-secondary);
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  
+  @include respond (Phone){
+    display: none;
+  }
+  
+
+  &__top{
+    background: transparent;
+  }
 
   &__link{
     text-decoration: none;

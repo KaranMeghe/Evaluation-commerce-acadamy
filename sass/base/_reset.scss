@@ -29,6 +29,10 @@
   html {
     font-size: 62.5%; //this define what 1rem is. its 10px , 10/16 = 62.5%;
     box-sizing: border-box;
+
+    @include respond (Phone){
+      font-size: 25%;
+    }
   }
 
   body {
@@ -37,6 +41,13 @@
     font-family: var(--font-primary);
     font-weight: 300;
     line-height: 1.6;
+  }
+
+  html , body{
+    @include respond (Phone){
+      overflow-x: hidden;
+      
+    }
   }
   
   a{text-decoration: none;}

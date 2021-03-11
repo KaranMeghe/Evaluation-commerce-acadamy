@@ -1,3 +1,22 @@
+/*
+0 - 320px:      i-phone-se
+321 - 360px:    i-phone-12-mini/motog4 
+361px - 500px:    i-phone-6/7/8/11pro/
+501px - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- iPhone-se
+- iPhone-12-mini
+- iPhone-11-12/pro
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+*/
 :root {
   --color-primary: #c69963;
   --color-primary-dark: #b28451;
@@ -26,11 +45,23 @@ html {
           box-sizing: border-box;
 }
 
+@media (max-width: 500px) {
+  html {
+    font-size: 25%;
+  }
+}
+
 body {
   color: var(--color-grey-dark-1);
   font-family: var(--font-primary);
   font-weight: 300;
   line-height: 1.6;
+}
+
+@media (max-width: 500px) {
+  html, body {
+    overflow-x: hidden;
+  }
 }
 
 a {
@@ -408,6 +439,12 @@ a {
   height: 100vh;
 }
 
+@media (max-width: 500px) {
+  .header {
+    height: 90vh;
+  }
+}
+
 .header__text-box {
   text-align: center;
   display: -webkit-box;
@@ -426,12 +463,33 @@ a {
   height: 78%;
 }
 
+@media (max-width: 500px) {
+  .header__text-box {
+    height: 87%;
+    padding: 5rem;
+  }
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background: var(--color-secondary);
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    display: none;
+  }
+}
+
+.navbar__top {
+  background: transparent;
 }
 
 .navbar__link {
