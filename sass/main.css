@@ -304,6 +304,10 @@ a {
   margin-right: 1rem;
 }
 
+.footer__mail {
+  margin-right: 1rem;
+}
+
 .footer__md--main {
   display: -webkit-box;
   display: -ms-flexbox;
