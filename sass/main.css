@@ -665,8 +665,10 @@ a {
 @media (max-width: 500px) {
   .navbar__logo--small-text {
     top: -7.5rem;
-    left: 6rem;
+    left: 10rem;
     position: relative;
+    font-size: 3.2rem;
+    font-weight: 400;
   }
 }
 
