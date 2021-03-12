@@ -25,7 +25,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
 
     @if $breakpoint == tab-port{
-        @media (min-width:500px) and (max-width:780px) { @content };
+        @media  (max-width:768px) { @content };
     }
 
     @if $breakpoint == laptop {
