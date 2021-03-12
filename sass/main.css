@@ -614,12 +614,6 @@ a {
   background: transparent;
 }
 
-@media (max-width: 500px) {
-  .navbar__top {
-    background: var(--color-secondary);
-  }
-}
-
 .navbar__link {
   text-decoration: none;
   color: var(--color-primary-dark);

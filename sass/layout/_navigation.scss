@@ -12,7 +12,7 @@
     background: transparent;
 
     @include respond (Phone){
-      background: var(--color-secondary);
+      // background: var(--color-secondary);gi
     }
   }
 
