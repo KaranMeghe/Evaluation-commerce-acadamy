@@ -14,10 +14,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 78%;
+        height: 100%;
 
         @include respond (Phone){
-            height: 55%;
+            height: 100%;
             padding: 5rem;
         }
     }
