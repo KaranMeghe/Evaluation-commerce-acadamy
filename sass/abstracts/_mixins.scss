@@ -23,5 +23,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @if $breakpoint == Phone{
         @media (max-width: 500px) { @content };
     }
+
+    @if $breakpoint == tab-port{
+        @media (min-width:500px) and (max-width:780px) { @content };
+    }
+
+    @if $breakpoint == laptop {
+         @media (min-width:1000px) and (max-width:1799px) { @content };
+    }
     
 }
