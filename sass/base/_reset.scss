@@ -41,6 +41,16 @@
     font-family: var(--font-primary);
     font-weight: 300;
     line-height: 1.6;
+
+    ::-moz-selection {
+      background-color: var(--color-primary);
+      color: white;
+    }
+    
+     ::selection{
+       background-color: var(--color-primary);
+       color: white;
+     }
   }
 
   html , body{

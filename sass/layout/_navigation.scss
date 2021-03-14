@@ -146,6 +146,7 @@
    }
 
   &__button{
+    
   @include respond (Phone){
    background: var(--color-primary);
    height: 11rem;
@@ -158,8 +159,7 @@
    box-shadow: 0 1rem 3rem rgba(#000, .1);
     text-align: center;
     cursor: pointer;
-
-   
+    
   }
 
   }
@@ -186,6 +186,7 @@
      &__icon{
       position: relative;
       margin-top: 5.5rem;
+
       
 
 

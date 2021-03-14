@@ -58,6 +58,16 @@ body {
   line-height: 1.6;
 }
 
+body ::-moz-selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+body ::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
 @media (max-width: 500px) {
   html, body {
     overflow-x: hidden;
